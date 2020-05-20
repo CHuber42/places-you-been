@@ -1,14 +1,17 @@
-<p>@Model.cityName</p><br>
-<p>@Model.Description</p><br>
-<p>@Model.TimeStamp</p><br>
-@try
-{
-  <p><img src="@Model.ImageURL"></p>
-}
-catch
-{
-  <p>No Image, btw!</p>
-}
 
-<a href='/places/new'>Add another place you've been</a>
+<html>
+  <style>
+  body {background-image: url(@Model.ImageURL);
+        background-repeat: no-repeat;
+        background-size: cover;}
+  </style>
+  <body>
+  <p>@Model.cityName</p><br>
+  <p>@Model.Description</p><br>
+  <p>@Model.TimeStamp</p><br>
+
+
+  <a href='/places/new'>Add another place you've been</a>
 <a href='/places'>View all places visited</a>
+</body>
+</html>
