@@ -1,9 +1,13 @@
 <form action="/places" method="post">
   <label for="name">Where was it?</label>
-  <input name="name" id="name" type="text" placeholder="Enter the name of the place" required>
+  <input name="name" id="name" type="text" placeholder="Name of the place" required>
   <label for="description">What do you remember about it?</label>
-  <input name="description" id="description" type="text" required>
+  <input name="description" id="description" type="text" placeholder="Description of the place" required>
   <label for="timestamp">When was it?</label>
-  <input name="timestamp" id="timestamp" type="text" required>
+  <input name="timestamp" id="timestamp" type="text" placeholder="Time Stamp" required>
+  <br>
+  <label for="image">Have an uploaded photo? Enter the url here:</label>
+  <input name="image" id="image" type="text" placeholder="http://www.imageURL.com">
+  <br>
   <button type="submit">Submit</button>
 </form>

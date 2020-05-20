@@ -1,6 +1,14 @@
 <p>@Model.cityName</p><br>
 <p>@Model.Description</p><br>
 <p>@Model.TimeStamp</p><br>
+@try
+{
+  <p><img src="@Model.ImageURL"></p>
+}
+catch
+{
+  <p>No Image, btw!</p>
+}
 
 <a href='/places/new'>Add another place you've been</a>
 <a href='/places'>View all places visited</a>

@@ -20,9 +20,9 @@ namespace PlacesWB.Models
     }
 
     [HttpPost("/places")]
-    public ActionResult Create(string name, string description, string timestamp)
+    public ActionResult Create(string name, string description, string timestamp, string image)
     {
-      Places entry = new Places(name, description, timestamp);
+      Places entry = new Places(name, description, timestamp, image);
       return RedirectToAction("Index");
     }
 

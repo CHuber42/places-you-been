@@ -6,6 +6,7 @@ namespace PlacesWB.Models
     public class Places
     {
       private static List<Places> _list = new List<Places>(){};
+      public string ImageURL {get; set;}
       public string cityName { get; set;}
       public string Description { get; set; }
       public string TimeStamp { get; set; }
@@ -13,9 +14,10 @@ namespace PlacesWB.Models
 
 
       //Constructor
-      public Places(string cityname, string description, string timestamp)
+      public Places(string cityname, string description, string timestamp, string imageUrl)
       {
         cityName = cityname;
+        ImageURL = imageUrl;
         Description = description;
         TimeStamp = timestamp;
         _list.Add(this);
