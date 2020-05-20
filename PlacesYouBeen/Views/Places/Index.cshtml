@@ -1,0 +1,6 @@
+@using PlacesWB.Models
+
+@foreach(Places place in Model)
+{
+  <a href="/places/@place.Id">@place.cityName</a><br>
+}
